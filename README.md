@@ -9,3 +9,12 @@ Senior Design project
 - Josh Duffy
 - Chris Sanford
 - Josh Wretlind
+
+### Git Commands
+get most recent version: `git pull`
+
+stage changes for commit: `git add -A`
+
+commit changes: `git commit -m 'My commit message'`
+
+push changes to GitHub: `git push origin master`
