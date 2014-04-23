@@ -27,7 +27,7 @@ void setup() {
  rightShoulderX.attach(8); //R1 (8) "B3"
  rightShoulderZ.attach(10); //R2  (10)
   
-  Serial.begin(115200);  
+  Serial.begin(9600);  
 }// end of setup
 
 
@@ -129,6 +129,8 @@ void serialPrint(){
 }
 int moveServos(int RSAX, int LSAX, int RSAZ, int LSAZ, int REA, int LEA){
 //int moveServos(int LEA, int LSAX, int LSAZ, int REA, int RSAX, int RSAZ){
+  
+  
     leftElbow.write(LEA);         
     rightElbow.write(REA);         
     leftShoulderX.write(LSAX - 90);         
