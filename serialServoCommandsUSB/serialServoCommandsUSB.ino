@@ -130,12 +130,15 @@ void serialPrint(){
 int moveServos(int RSAX, int LSAX, int RSAZ, int LSAZ, int REA, int LEA){
 //int moveServos(int LEA, int LSAX, int LSAZ, int REA, int RSAX, int RSAZ){
   
-  
     leftElbow.write(LEA);         
-    rightElbow.write(REA);         
-    leftShoulderX.write(LSAX - 90);         
-    rightShoulderX.write(RSAX - 90);
+    rightElbow.write(180 - REA);
+
     
-    leftShoulderZ.write(LSAZ);         
+    leftShoulderX.write(0);         
+    rightShoulderX.write(0);
+    //leftShoulderX.write(180 - LSAX);         
+    //rightShoulderX.write(RSAX);
+    
+    leftShoulderZ.write(180 - LSAZ);         
     rightShoulderZ.write(RSAZ);         
 }
